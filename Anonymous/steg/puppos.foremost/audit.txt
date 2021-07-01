@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Jul  1 11:00:20 2021
+Invocation: foremost puppos.jpeg -T puppos.foremost 
+Output directory: /home/ice1187/ctfs/tryhackme/Anonymous/steg/output_Thu_Jul__1_11_00_20_2021
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: puppos.jpeg
+Start: Thu Jul  1 11:00:20 2021
+Length: 258 KB (265188 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	     258 KB 	          0 	 
+Finish: Thu Jul  1 11:00:20 2021
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Jul  1 11:00:20 2021

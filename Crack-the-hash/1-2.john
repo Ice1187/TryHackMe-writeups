@@ -1,0 +1,15 @@
+$ john -w /opt/SecLists/Passwords/Leaked-Databases/rockyou.txt --format=raw-sha1 ~/ctfs/tryhackme/Crack-the-hash/1-2.hash
+Warning: invalid UTF-8 seen reading /opt/SecLists/Passwords/Leaked-Databases/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 5 password hashes with no different salts (Raw-SHA1 [SHA1 256/256 AVX2 8x])
+Remaining 4 password hashes with no different salts
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Warning: Only 2 candidates left, minimum 8 needed for performance.
+0g 0:00:00:00 DONE (2021-06-18 12:59) 0g/s 354600p/s 354600c/s 1418KC/s notused..sss
+Session completed
+
+$ john --show ~/ctfs/tryhackme/Crack-the-hash/1-2.hash
+?:password123
+
+1 password hash cracked, 0 left

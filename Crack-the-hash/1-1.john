@@ -1,0 +1,13 @@
+$ john ~/ctfs/tryhackme/Crack-the-hash/1-1.hash --format=raw-md5
+Using default input encoding: UTF-8
+Loaded 1 password hash (Raw-MD5 [MD5 256/256 AVX2 8x3])
+Warning: no OpenMP support for this hash type, consider --fork=4
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:password.lst, rules:Wordlist
+Proceeding with incremental:ASCII
+easy             (?)
+1g 0:00:00:03 DONE 3/3 (2021-06-18 11:01) 0.2631g/s 9538Kp/s 9538Kc/s 9538KC/s earc..eaui
+Use the "--show --format=Raw-MD5" options to display all of the cracked passwords reliably
+Session completed

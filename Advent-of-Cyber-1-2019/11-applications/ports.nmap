@@ -1,0 +1,52 @@
+# Nmap 7.60 scan initiated Sat Jun 26 19:43:52 2021 as: nmap -sC -sV -v -oN ports.nmap 10.10.109.93
+Nmap scan report for 10.10.109.93
+Host is up (0.56s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 3.0.2
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 500 OOPS: invalid pasv_address
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.9.4.209
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100003  3           2049/udp  nfs
+|   100003  3,4         2049/tcp  nfs
+|   100005  1,2,3      20048/tcp  mountd
+|   100005  1,2,3      20048/udp  mountd
+|   100021  1,3,4      41779/tcp  nlockmgr
+|   100021  1,3,4      57834/udp  nlockmgr
+|   100024  1          33016/udp  status
+|   100024  1          35547/tcp  status
+|   100227  3           2049/tcp  nfs_acl
+|_  100227  3           2049/udp  nfs_acl
+2049/tcp open  nfs_acl 3 (RPC #100227)
+3306/tcp open  mysql   MySQL 5.7.28
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.28
+|   Thread ID: 4
+|   Capabilities flags: 65535
+|   Some Capabilities: Speaks41ProtocolOld, FoundRows, IgnoreSpaceBeforeParenthesis, ODBCClient, SupportsTransactions, LongPassword, IgnoreSigpipes, SwitchToSSLAfterHandshake, InteractiveClient, SupportsCompression, Speaks41ProtocolNew, ConnectWithDatabase, DontAllowDatabaseTableColumn, LongColumnFlag, SupportsLoadDataLocal, Support41Auth, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x1B<OB"\x01\x17dCGX/~\x1D\x1Ec]egy
+|_  Auth Plugin Name: 79
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 26 19:44:07 2021 -- 1 IP address (1 host up) scanned in 15.75 seconds

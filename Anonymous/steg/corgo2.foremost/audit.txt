@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Jul  1 10:59:59 2021
+Invocation: foremost corgo2.jpg 
+Output directory: /home/ice1187/ctfs/tryhackme/Anonymous/steg/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: corgo2.jpg
+Start: Thu Jul  1 10:59:59 2021
+Length: 41 KB (42663 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      41 KB 	          0 	 
+Finish: Thu Jul  1 10:59:59 2021
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Jul  1 10:59:59 2021

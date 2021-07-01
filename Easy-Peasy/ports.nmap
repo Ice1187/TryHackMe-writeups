@@ -1,0 +1,18 @@
+# Nmap 7.60 scan initiated Thu Jul  1 17:35:43 2021 as: nmap -sC -sV -oN ports.nmap -vv 10.10.123.76
+Nmap scan report for 10.10.123.76
+Host is up, received syn-ack (0.35s latency).
+Scanned at 2021-07-01 17:35:43 UTC for 43s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack nginx 1.16.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: nginx/1.16.1
+|_http-title: Welcome to nginx!
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul  1 17:36:26 2021 -- 1 IP address (1 host up) scanned in 42.62 seconds

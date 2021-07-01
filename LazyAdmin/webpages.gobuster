@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.95.250
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/ice1187/tools/SecLists/Discovery/Web-Content/raft-small-words.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php
+[+] Timeout:                 10s
+===============================================================
+2021/06/16 08:52:18 Starting gobuster in directory enumeration mode
+===============================================================
+/.html                (Status: 403) [Size: 277]
+/.php                 (Status: 403) [Size: 277]
+/.html.php            (Status: 403) [Size: 277]
+/.htm                 (Status: 403) [Size: 277]
+/.htm.php             (Status: 403) [Size: 277]
+/content              (Status: 301) [Size: 314] [--> http://10.10.95.250/content/]
+/.                    (Status: 200) [Size: 11321]
+........

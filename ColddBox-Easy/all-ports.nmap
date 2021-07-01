@@ -1,0 +1,1 @@
+# Nmap 7.60 scan initiated Thu Jul  1 16:41:26 2021 as: nmap -sC -vv -p- -oN all-ports.nmap 10.10.34.39

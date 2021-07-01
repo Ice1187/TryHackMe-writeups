@@ -1,0 +1,65 @@
+$ hashcat -a 0 -m 1800 --force '$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.' /tmp/b
+hashcat (v6.2.2) starting...
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+OpenCL API (OpenCL 1.2 pocl 1.1 None+Asserts, LLVM 6.0.0, SPIR, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+===========================================================================================================================
+* Device #1: pthread-Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz, 1426/1490 MB (512 MB allocatable), 4MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Uses-64-Bit
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 0 MB
+
+Dictionary cache built:
+* Filename..: /tmp/b
+* Passwords.: 10
+* Bytes.....: 111
+* Keyspace..: 10
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.
+
+$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.:waka99
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Name........: sha512crypt $6$, SHA512 (Unix)
+Hash.Target......: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPM...ZAs02.
+Time.Started.....: Fri Jun 18 16:28:21 2021, (0 secs)
+Time.Estimated...: Fri Jun 18 16:28:21 2021, (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/tmp/b)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      260 H/s (0.26ms) @ Accel:256 Loops:64 Thr:1 Vec:4
+Recovered........: 1/1 (100.00%) Digests
+Progress.........: 10/10 (100.00%)
+Rejected.........: 0/10 (0.00%)
+Restore.Point....: 0/10 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4992-5000
+Candidate.Engine.: Device Generator
+Candidates.#1....: wakabear730 -> waka93
+
+Started: Fri Jun 18 16:28:20 2021
+Stopped: Fri Jun 18 16:28:23 2021
+

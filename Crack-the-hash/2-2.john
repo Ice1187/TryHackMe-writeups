@@ -1,0 +1,9 @@
+$ john --wordlist=/opt/SecLists/Passwords/Leaked-Databases/rockyou.txt --format=nt /home/ice1187/ctfs/tryhackme/Crack-the-hash/2-2.hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (NT [MD4 256/256 AVX2 8x3])
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press 'q' or Ctrl-C to abort, almost any other key for status
+n63umy8lkf4i     (?)
+1g 0:00:00:00 DONE (2021-06-18 13:30) 2.380g/s 12474Kp/s 12474Kc/s 12474KC/s n6546442..n6014340431p
+Use the "--show --format=NT" options to display all of the cracked passwords reliably
+Session completed

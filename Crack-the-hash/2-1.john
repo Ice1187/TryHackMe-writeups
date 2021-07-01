@@ -1,0 +1,10 @@
+$ john --wordlist=/opt/SecLists/Passwords/Leaked-Databases/rockyou.txt --format=raw-sha256 /home/ice1187/ctfs/tryhackme/Crack-the-hash/2-1.hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (Raw-SHA256 [SHA256 256/256 AVX2 8x])
+Warning: poor OpenMP scalability for this hash type, consider --fork=4
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+paule            (?)
+1g 0:00:00:00 DONE (2021-06-18 13:27) 33.33g/s 4369Kp/s 4369Kc/s 4369KC/s rozalia..koryna
+Use the "--show --format=Raw-SHA256" options to display all of the cracked passwords reliably
+Session completed

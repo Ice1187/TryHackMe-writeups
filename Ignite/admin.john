@@ -1,0 +1,10 @@
+$ john admin.hash --wordlist=/opt/SecLists/Passwords/Leaked-Databases/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (dynamic_24 [sha1($p.$s) 256/256 AVX2 8x1])
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press 'q' or Ctrl-C to abort, almost any other key for status
+admin            (admin)
+1g 0:00:00:00 DONE (2021-06-30 19:59) 100.0g/s 2016Kp/s 2016Kc/s 2016KC/s woodside..soysexy
+Use the "--show --format=dynamic_24" options to display all of the cracked passwords reliably
+Session completed
+

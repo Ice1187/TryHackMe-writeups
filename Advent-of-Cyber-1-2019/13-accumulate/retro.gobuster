@@ -1,0 +1,19 @@
+$ gobuster dir -u $IP/retro -w /opt/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -o retro.gobuster
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.75.140/retro
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /opt/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/06/28 13:05:36 Starting gobuster in directory enumeration mode
+===============================================================
+/wp-content           (Status: 301) [Size: 160] [--> http://10.10.75.140/retro/wp-content/]
+/wp-includes          (Status: 301) [Size: 161] [--> http://10.10.75.140/retro/wp-includes/]
+/wp-admin             (Status: 301) [Size: 158] [--> http://10.10.75.140/retro/wp-admin/]
+

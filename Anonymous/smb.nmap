@@ -1,0 +1,41 @@
+# Nmap 7.60 scan initiated Thu Jul  1 10:44:54 2021 as: nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse -oN smb.nmap 10.10.81.88
+Nmap scan report for 10.10.81.88
+Host is up (0.55s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: guest
+|   \\10.10.81.88\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (anonymous server (Samba, Ubuntu))
+|     Users: 2
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.81.88\pics: 
+|     Type: STYPE_DISKTREE
+|     Comment: My SMB Share Directory for Pics
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\home\namelessone\pics
+|     Anonymous access: READ
+|     Current user access: READ
+|   \\10.10.81.88\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|_    Current user access: <none>
+| smb-enum-users: 
+|   ANONYMOUS\namelessone (RID: 1003)
+|     Full name:   namelessone
+|     Description: 
+|_    Flags:       Normal user account
+
+# Nmap done at Thu Jul  1 10:46:11 2021 -- 1 IP address (1 host up) scanned in 76.77 seconds

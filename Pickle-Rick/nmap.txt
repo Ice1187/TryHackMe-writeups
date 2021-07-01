@@ -1,0 +1,22 @@
+# Nmap 7.60 scan initiated Tue Jun  1 15:41:12 2021 as: nmap -sC -sV -v -oA nmap.txt 10.10.110.99
+Increasing send delay for 10.10.110.99 from 0 to 5 due to 41 out of 135 dropped probes since last increase.
+Nmap scan report for 10.10.110.99
+Host is up (0.34s latency).
+Not shown: 997 closed ports
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 9d:83:13:f5:f2:2e:09:ea:25:2f:a9:70:19:a0:4a:da (RSA)
+|   256 2b:0d:fe:e4:16:ef:e8:33:9f:3b:a3:c7:9b:04:85:d1 (ECDSA)
+|_  256 cf:eb:01:20:d3:a2:a5:d9:3f:6f:93:70:65:1c:63:ab (EdDSA)
+80/tcp   open     http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Rick is sup4r cool
+9200/tcp filtered wap-wsp
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun  1 15:42:11 2021 -- 1 IP address (1 host up) scanned in 59.10 seconds
