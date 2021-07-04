@@ -1,0 +1,33 @@
+# Nmap 7.60 scan initiated Sun Jul  4 22:53:24 2021 as: nmap -sC -vv -oN local.nmap 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up, received syn-ack (0.51s latency).
+Scanned at 2021-07-04 22:53:24 CST for 656s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack
+| ssh-hostkey: 
+|   2048 f3:a2:ed:93:4b:9c:bf:bb:33:4d:48:0d:fe:a4:de:96 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9/A7kkuN5E+SS1C6w1NfeY196Rj4Y1Yx7njNCwNaCgIv8m+V+7MTHsRn3txLXRTHXErMqW3ypCmmjuY3O40kAragZSgA/XhdesGxGVa0szHK7H4fB28uQiyZgkOfIt/12kGaHB3iGwOeex2Hdg6ct4FdxTWKgDvuKZSLVoPXG66R8SOHql2cXfUtzyUMNJTTqoUED69soEJVG2ctfPKXi4BfFqM3OK2HgKzbmcSPXlLUTNhlcvjPuTa0kMRqiNTMVdP0PjSFdoaMviXHiznW7Fn6NHe3R/vIQt8Ac05Mdvim21QjRpJ4pm7v5+q1wXCJxGG6Ov71yThKP6yZ4ByMl
+|   256 22:72:00:36:eb:37:12:9f:5a:cc:c2:73:e0:4f:f1:4e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM9QUKykbzCSI7+PgoVzHNKOVIWf+zm0LN/f4n0VJc/P0J9TzLImkYHIOCnRFpNUPtiWGXbHXi67FQxEpgZMReo=
+|   256 78:1d:79:dc:8d:41:f6:77:60:65:f5:74:b6:cc:8b:6d (EdDSA)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKrvf1zJBhqU1RxUCYuTgoIy+7NzCqZeFWV67bt8+APV
+80/tcp   open  http    syn-ack
+|_http-generator: WordPress 5.7
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: BadByte &#8211; You&#039;re looking at me, but they are lookin...
+3306/tcp open  mysql   syn-ack
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.33-0ubuntu0.18.04.1
+|   Thread ID: 58
+|   Capabilities flags: 65535
+|   Some Capabilities: InteractiveClient, Support41Auth, IgnoreSigpipes, SwitchToSSLAfterHandshake, SupportsTransactions, LongColumnFlag, ODBCClient, SupportsCompression, Speaks41ProtocolNew, Speaks41ProtocolOld, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, ConnectWithDatabase, DontAllowDatabaseTableColumn, LongPassword, FoundRows, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: =1.i1sV\x153lc`\x1CeY1|\x0DP\x02
+|_  Auth Plugin Name: 96
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Jul  4 23:04:20 2021 -- 1 IP address (1 host up) scanned in 655.95 seconds
